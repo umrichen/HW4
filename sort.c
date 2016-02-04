@@ -57,7 +57,6 @@ void insertion_sort(int *numbers, unsigned count) {
 	memcpy(numbers, new, count*sizeof(int));
 }
 
-__attribute__ ((weak))
 int qsortcmp(const void *a, const void *b) {
 	return compare(*((int *) a), *((int *) b));
 }
